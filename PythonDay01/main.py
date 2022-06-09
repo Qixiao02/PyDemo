@@ -32,7 +32,7 @@ if __name__ == '__main__':
     # print_hi('谭文彦')
     # print(test())
     # print(Square(5))
-    # print(Round(float(input("这是一个求圆面积的方法,请输入圆的半径:"))))
-    # print(Round_CIR(float(input("这是一个求圆周长的方法，请输入圆的半径:"))))
+    print("%.2f" % Round(float(input("这是一个求圆面积的方法,请输入圆的半径:"))))
+    print("%.2f" % Round_CIR(float(input("这是一个求圆周长的方法，请输入圆的半径:"))))
 
-    Leap_Year(int(input("请输入年份:")))
+    # Leap_Year(int(input("请输入年份:")))
