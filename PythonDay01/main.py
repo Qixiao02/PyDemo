@@ -1,16 +1,38 @@
-# 这是一个示例 Python 脚本。
-
-# 按 Shift+F10 执行或将其替换为您的代码。
-# 按 双击 Shift 在所有地方搜索类、文件、工具窗口、操作和设置。
-
-
 def print_hi(name):
-    # 在下面的代码行中使用断点来调试脚本。
-    print(f'Hi, {name}')  # 按 Ctrl+F8 切换断点。
+    print(f'Hi, {name}')
 
+def test():
+    a = 10
+    b = 3
+    a += b
+    a *= a + 2
+    return a
+def Π ():
+    Π = 3.1415926535
+    return Π
 
-# 按间距中的绿色按钮以运行脚本。
+def Square(num):#平方
+    return num**2
+
+def Round(r): #圆的面积
+    S = Π() * (r**2)
+    return S
+
+def Round_CIR(r):
+    C = 2 * Π() * r
+    return C
+
+def Leap_Year(year):
+    if year % 4 == 0 and year % 100 != 0:
+        print("此年是闰年")
+    else:
+        print("此年不是闰年")
+
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    # print_hi('谭文彦')
+    # print(test())
+    # print(Square(5))
+    # print(Round(float(input("这是一个求圆面积的方法,请输入圆的半径:"))))
+    # print(Round_CIR(float(input("这是一个求圆周长的方法，请输入圆的半径:"))))
 
-# 访问 https://www.jetbrains.com/help/pycharm/ 获取 PyCharm 帮助
+    Leap_Year(int(input("请输入年份:")))
