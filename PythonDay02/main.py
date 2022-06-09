@@ -1,16 +1,21 @@
-# 这是一个示例 Python 脚本。
-
-# 按 Shift+F10 执行或将其替换为您的代码。
-# 按 双击 Shift 在所有地方搜索类、文件、工具窗口、操作和设置。
-
-
-def print_hi(name):
-    # 在下面的代码行中使用断点来调试脚本。
-    print(f'Hi, {name}')  # 按 Ctrl+F8 切换断点。
-
-
-# 按间距中的绿色按钮以运行脚本。
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# 访问 https://www.jetbrains.com/help/pycharm/ 获取 PyCharm 帮助
+# x = float(input('x = '))
+# if x > 1:
+#     y = 3 * x -5
+# elif -1 <= x <= 1:
+#     y = x + 2
+# elif x < -1:
+#     y = 5 * x + 3
+# print('%.1f = %.2f' % (x, y))
+# 优化👇
+def Math_function():
+    print(f"f(x) =\t3x - 5 (x > 1) \n\t\tx + 2 (-1 <= x <= 1) \n\t\t5x + 3 (x < -1)")
+    x = float(input('x = '))
+    if x > 1:
+        y = 3 * x - 5
+    else:
+        if -1 <= x <= 1:
+            y = x + 2
+        else:
+            y = 5* x + 3
+    return y
+print(Math_function())
