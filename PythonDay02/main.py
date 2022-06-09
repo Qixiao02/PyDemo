@@ -16,6 +16,6 @@ def Math_function():
         if -1 <= x <= 1:
             y = x + 2
         else:
-            y = 5* x + 3
+            y = 5 * x + 3
     return y
-print(Math_function())
+print("y = " "%.2f" % Math_function())
