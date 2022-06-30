@@ -34,10 +34,12 @@ print(japanese_manga)
 """del"""
 del japanese_manga[-1]
 print(japanese_manga)
+
 """pop"""
 japanese_manga_pop = japanese_manga.pop()
 print(japanese_manga)
 print("pop删除的值："+japanese_manga_pop)
+
 """remove"""
 japanese_manga_remove = "偷星九月天"
 japanese_manga.remove(japanese_manga_remove)
