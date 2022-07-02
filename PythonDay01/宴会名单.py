@@ -58,6 +58,8 @@ print(cancel_invite_list_6 + "," + apology_letter)
 print("\n")
 print("允许前来的嘉宾：")
 print(invitation_list)
+num = len(invitation_list)
+print("一共邀约了", num, "名嘉宾")
 for i in range(0, 3):
     i + 1
     print(invitation_list[i] + "," + invitation_letter)
