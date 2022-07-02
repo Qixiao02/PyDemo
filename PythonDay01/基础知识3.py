@@ -5,7 +5,7 @@ sort()方法
 cars = ['bmw', 'audi', 'toyota', 'subaru']
 # cars.sort()
 # print(cars)
-"""反向"""
+"""reverse字母相反"""
 # cars.sort(reverse=True)
 # print(cars)
 """
