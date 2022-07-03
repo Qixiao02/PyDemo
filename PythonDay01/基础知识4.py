@@ -84,3 +84,29 @@ print(cube)
 players = ['twy', 'lkj', 'dsa', 'plk', 'xck']
 print(players[0:3])
 print(players[:4])
+print(players[2:])
+"""遍历切片"""
+for player in players[:3]:
+    print(player.title())
+"""复制列表"""
+one_players = players[:]
+two_players = players[1:4]
+print(one_players)
+print(two_players)
+"""元组"""
+dimensions = (200, 50)
+print(dimensions[0])
+print(dimensions[1])
+#遍历元组
+for dimension in dimensions:
+    print(dimension)
+print("\n")
+#修改元组变量
+"""虽然不能修改元组的元素但是可以给储存元组的变量赋值"""
+print("Original dimensions:")
+for dimension in dimensions:
+    print(dimension)
+dimensions = (400, 100)
+print("\nModified dimensions:")
+for dimension in dimensions:
+    print(dimension)
