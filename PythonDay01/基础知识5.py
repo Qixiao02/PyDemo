@@ -40,3 +40,13 @@ language =favorite_language['twy'].title()
 print(f"twy最喜欢的语言是:{language}")
 print(favorite_language['hzh'])
 """使用get()方法访问值"""
+#如果访问的字典有键但没有值则系统会显示traceback keyError
+#如何方法无值的键
+alien_3 = {'color': 'green', 'speed': 'slow', 'points': 7}
+point_value = alien_3.get('points', "这个键没有值")
+print(point_value)
+"""如果这个键有值则打印值"""
+"""如果指点的键可能没有值则使用get()方法"""
+alien_3 = {'color': 'green', 'speed': 'slow', }
+point_value = alien_3.get('points', "这个键没有值")
+print(point_value)
