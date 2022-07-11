@@ -52,13 +52,13 @@ print(num_list_two)
 #使用for循环打印1-20(包含20)
 for v in range(1, 21):
     print(v)
-#创建一个包含数1-1000000的列表，再使用for打印
-a_million_list = [z for z in range(1, 1000001)]
-print(a_million_list)
+# #创建一个包含数1-1000000的列表，再使用for打印
+# a_million_list = [z for z in range(1, 1000001)]
+# print(a_million_list)
 #一百万求和
-print(min(a_million_list))
-print(max(a_million_list))
-print(sum(a_million_list))
+# print(min(a_million_list))
+# print(max(a_million_list))
+# print(sum(a_million_list))
 #通过range指定第三个参数创建一个列表，其中包含1-20的奇数再使用for打印
 oddNumber_list = [o for o in range(1, 21, 2)]
 print(oddNumber_list)
