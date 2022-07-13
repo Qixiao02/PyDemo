@@ -45,3 +45,28 @@ japanese_manga_remove = "偷星九月天"
 japanese_manga.remove(japanese_manga_remove)
 print(japanese_manga)
 print("remove删除的值：" + japanese_manga_remove)
+
+"""补充"""
+list1 = ['a', 'b', 'c', 'd']
+str2 = ['a', 'b', 'c', 'd']
+list1
+['a', 'b', 'c', 'd']
+# 解决方法一：
+# 使用join()
+print(' '.join(list1))
+
+list1 = ['a', 'b', 'c', 'd']
+str = '-'
+print(str.join(list1))
+# 解决方法二：
+# 如果list存放的是数字，则：将其转为int即可，原来存放的是string型。
+# for i in str2:
+#     int(i)
+# print(i)
+
+# 如果想同行输出在使用print时，添加end = ‘ ’即可（末尾不换行，加空格）。
+for i in str2:
+    print(int(i), end=' ')
+
+
+
