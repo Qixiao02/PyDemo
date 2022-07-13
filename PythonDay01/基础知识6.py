@@ -69,3 +69,27 @@ while unconfirmed_users:
     current_user = unconfirmed_users.pop()
     print(f"验证用户：{current_user.title()}")
     confirmed_users.append(current_user)
+"""删除为特定值的所有列表元素"""
+pets = ['dog', 'cat', 'dog', 'goldfish', 'rabbit', 'cat']
+print(pets)
+while 'cat' in pets:
+    pets.remove('cat')
+    print(pets)
+print(pets)
+"""使用户填充字典"""
+user_favorite_city = {}
+#设置一个标志指出程序是否继续
+polling_active = True
+while polling_active:
+    user_name = input("请问你叫什么名字？")
+    favorite_city = input("你最想去哪座城市？")
+    user_favorite_city[user_name] = favorite_city
+    #看看是否还有人要参与调查
+    repat = input("你是否想要其他人回答？(yes/no)")
+    if repat == "no":
+        polling_active = False
+    #显示结果
+    for key, vaule in user_favorite_city.items():
+        print(f"{key},最想去的城市是{vaule}。")
+# print(user_favorite_city)
+
