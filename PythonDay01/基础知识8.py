@@ -75,11 +75,14 @@ class Electriccar(Car):
     def electric_car_battery(self):
         print(f"这辆电车的电池容量还剩余:{self.battery_size}kwh")
     def car_fill_gas_tank(self, fill_gas_tanks):
-        fill_gas_tanks = f'这是辆电车！'
-my_electric_car = Electriccar('tesla', '247','Small Family Car')
+        fill_gas_tanks = '这是辆电车！'
+        self.fill_gas_tanks = fill_gas_tanks
+        print(fill_gas_tanks)
+
+
+my_electric_car = Electriccar('tesla', '247', 'Small Family Car')
 my_electric_car.updata_car_kilometers(16352)
 my_electric_car.auto_add_car_kilometers(13)
-my_electric_car.car_fill_gas_tank(38)
+my_electric_car.car_fill_gas_tank(1)
 print(my_electric_car.get_car_info())
 my_electric_car.electric_car_battery()
-
