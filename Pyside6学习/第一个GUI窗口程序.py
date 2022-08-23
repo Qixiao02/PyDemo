@@ -1,16 +1,16 @@
 import sys
-from PySide6.QtWidgets import QApplication, QWidget, QPushButton
-
+from PySide6.QtWidgets import QApplication, QMainWindow
+import 学生管理系统
 def main():
-
+    #创建一个QApplicationl类的实例
     app = QApplication(sys.argv)
-
-    w = QWidget()
-    w.resize(500, 500)
-    w.move(600, 600)
-
-    w.setWindowTitle('第一个PythonGUI程序')
-    w.show()
+    #创建窗口
+    main = QMainWindow()
+    ui = 学生管理系统.Ui_MainWindow()
+    ui.setupUi(main)
+    #title
+    main.setWindowTitle('学生管理系统')
+    main.show()
 
     sys.exit(app.exec())
 
