@@ -1,0 +1,56 @@
+Index: Pyside6学习/第一个GUI窗口程序.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import sys\r\nfrom PySide6.QtWidgets import QApplication, QWidget, QPushButton\r\n\r\ndef main():\r\n\r\n    app = QApplication(sys.argv)\r\n\r\n    w = QWidget()\r\n    w.resize(500, 500)\r\n    w.move(600, 600)\r\n\r\n    w.setWindowTitle('第一个PythonGUI程序')\r\n    w.show()\r\n\r\n    sys.exit(app.exec())\r\n\r\n\r\nif __name__ == '__main__':\r\n    main()
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Pyside6学习/第一个GUI窗口程序.py b/Pyside6学习/第一个GUI窗口程序.py
+--- a/Pyside6学习/第一个GUI窗口程序.py	(revision c79e5b136f9f4ebdeb4d16899a8b1c62a6700601)
++++ b/Pyside6学习/第一个GUI窗口程序.py	(date 1661941445537)
+@@ -1,16 +1,16 @@
+ import sys
+-from PySide6.QtWidgets import QApplication, QWidget, QPushButton
+-
++from PySide6.QtWidgets import QApplication, QMainWindow
++import 学生管理系统
+ def main():
+-
++    #创建一个QApplicationl类的实例
+     app = QApplication(sys.argv)
+-
+-    w = QWidget()
+-    w.resize(500, 500)
+-    w.move(600, 600)
+-
+-    w.setWindowTitle('第一个PythonGUI程序')
+-    w.show()
++    #创建窗口
++    main = QMainWindow()
++    ui = 学生管理系统.Ui_MainWindow()
++    ui.setupUi(main)
++    #title
++    main.setWindowTitle('学生管理系统')
++    main.show()
+ 
+     sys.exit(app.exec())
+ 
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectRootManager\" version=\"2\" project-jdk-name=\"Python 3.10\" project-jdk-type=\"Python SDK\" />\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision c79e5b136f9f4ebdeb4d16899a8b1c62a6700601)
++++ b/.idea/misc.xml	(date 1661753163206)
+@@ -1,4 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.10" project-jdk-type="Python SDK" />
++  <component name="PyCharmProfessionalAdvertiser">
++    <option name="shown" value="true" />
++  </component>
+ </project>
+\ No newline at end of file
