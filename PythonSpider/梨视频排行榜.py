@@ -50,20 +50,21 @@ class popular:
         return video_urls
     def DownloadVideo(self):
         VideoName = self.latest_Popular_Allurl()[1]
-        # for i in VideoName:
-        #     print(i)
+        # print(VideoName)
+        VideoNamelist = []
+        for i in VideoName:
+            VideoNamelist.append(i.replace('"', ""))
         video_urls = self.Video_URL()
         # for i in video_urls:
-        #     print(i)
-
-        n = 0
-        for x in video_urls:
-            n = n+1
-            resp = requests.get(x)
-            f = open(f"{n}.mp4", "wb")
-            f.write(resp.content)
-            f.close()
-            print(f"{n}下载完成！")
+        # #     print(i)
+        try:
+            for i in range(len(VideoNamelist)):
+                with open(VideoNamelist[i]+".mp4",'wb') as f:
+                    content = requests.get(video_urls[i]).content
+                    f.write(content)
+                    print(VideoNamelist[i]+"ok")
+        except Exception as e:
+            print(e)
 if __name__ == '__main__':
     # popular().Video_URL()
     popular().DownloadVideo()
