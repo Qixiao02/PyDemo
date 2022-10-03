@@ -20,7 +20,7 @@ alien_1['points'] = '20'
 print(alien_1)
 alien_1 = {'color': 'red'}
 print(alien_1['color'])
-alien_2 ={'x_position': 0, 'y_position': 25, 'speed': 'medium'}
+alien_2 = {'x_position': 0, 'y_position': 25, 'speed': 'medium'}
 print(f"原来的 x_position:{alien_2['x_position']}")
 """删除键值对"""
 print(alien_0)

@@ -59,7 +59,7 @@ class popular:
         # #     print(i)
         try:
             for i in range(len(VideoNamelist)):
-                with open(VideoNamelist[i]+".mp4",'wb') as f:
+                with open(VideoNamelist[i]+".mp4", 'wb') as f:
                     content = requests.get(video_urls[i]).content
                     f.write(content)
                     print(VideoNamelist[i]+"ok")

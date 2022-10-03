@@ -15,7 +15,7 @@ csv.writer(db).writerow(["影片名", "上映年份", "国家", "评分", "评�
 for i in range(0, 275, 25):
     url = f"https://movie.douban.com/top250?start={i}&filter="
     doubanTop250 = requests.get(url, headers=head)
-    print(doubanTop250.text)
+    # print(doubanTop250.text)
     doubanTop250.close()
     doubanTop250_rule = rule.finditer(doubanTop250.text)
 
@@ -24,7 +24,7 @@ for i in range(0, 275, 25):
         dic = it.groupdict()
         dic['year'] = dic['year'].strip()
         doubanTop250_csv.writerow(dic.values())
-        # print(dic)
-        print("写入完成！")
+        print(dic)
+    print("写入完成！")
 db.close()
 doubanTop250.close()
