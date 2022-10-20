@@ -5,20 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="decb79f4-b876-48f8-acce-1a33b340ee33" name="变更" comment="Flask Study">
-      <change beforePath="$PROJECT_DIR$/.idea/PyDemo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PyDemo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask/.idea/Flask.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask/.idea/dbnavigator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask/02模板/app.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask/02模板/templates/about.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask/config.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flask/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonSpider/梨视频排行榜.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonSpider/梨视频排行榜.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonSpider/《这十年·幸福中国》鱼皮作画 传承千年的赫哲文明.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonSpider/《这十年》微纪录片第43集《追风逐梦的海油人侯静》1014交播.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonSpider/这十年·追光之夜｜《共同家园》唱响大湾区创业者的青春奋斗.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonSpider/这十年·追光之夜｜《深夜里的守护者》守护幸福中国万家灯火.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonSpider/这十年·追光之夜｜《领航》追光，引领心之所向.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonSpider/这十年·追光之夜｜周深《向光而行》 唱出追光的力量.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonSpider/这十年·追光之夜｜寻梦启航！《星梦》致敬所有航天人.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonSpider/这十年·追光之夜｜歌舞《如愿》致敬奉献者.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonSpider/这十年·追光之夜｜航天人代表张玉花讲述《理想之光》.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonSpider/这十年·追光之夜｜讴歌拼搏精神！《幸福是奋斗出来的》.mp4" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -744,6 +740,7 @@
       <workItem from="1666078494848" duration="1406000" />
       <workItem from="1666094964490" duration="2736000" />
       <workItem from="1666256624284" duration="91000" />
+      <workItem from="1666256724790" duration="307000" />
     </task>
     <task id="LOCAL-00001" summary="整Python练习项目">
       <created>1661066809232</created>
@@ -815,7 +812,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666256640735</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Flask Study">
+      <created>1666256916273</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1666256916273</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Flask Study">
+      <created>1666257005263</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1666257005263</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
