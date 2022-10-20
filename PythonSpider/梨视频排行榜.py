@@ -1,12 +1,15 @@
 import requests
 from lxml import etree
-import re
+
+
 class popular:
     def __init__(self):
         self.url = "https://www.pearvideo.com/popular"
         self.head = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.27'
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
+                          'Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.27 '
         }
+
     def latest_Popular_Allurl(self):
         resq = requests.get(url=self.url, headers=self.head).text
         # print(resq)
@@ -24,9 +27,10 @@ class popular:
             # print(url)
             list_URL.append(url)
         # print(list_URL)
-        return (list_URL,names)
+        return list_URL, names
+
     def Video_URL(self):
-        video_urls =[]
+        video_urls = []
         for i in self.latest_Popular_Allurl()[0]:
             resq = requests.get(url=i, headers=self.head).text
             tree = etree.HTML(resq)
@@ -36,8 +40,9 @@ class popular:
             video_url = f"https://www.pearvideo.com/videoStatus.jsp?contId=" + results
             # print(video_url)
             head = {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.27',
-                #防盗链 溯源
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
+                              'Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.27',
+                # 防盗链 溯源
                 'Referer': f'https://www.pearvideo.com/video_' + results
             }
             # print(head.items())
@@ -48,6 +53,7 @@ class popular:
             # print(systemTime)
             video_urls.append(srcurl.replace(systemTime, f"cont-{results}"))
         return video_urls
+
     def DownloadVideo(self):
         VideoName = self.latest_Popular_Allurl()[1]
         # print(VideoName)
@@ -59,12 +65,14 @@ class popular:
         # #     print(i)
         try:
             for i in range(len(VideoNamelist)):
-                with open(VideoNamelist[i]+".mp4", 'wb') as f:
+                with open(VideoNamelist[i] + ".mp4", 'wb') as f:
                     content = requests.get(video_urls[i]).content
                     f.write(content)
-                    print(VideoNamelist[i]+"ok")
+                    print(VideoNamelist[i] + "ok")
         except Exception as e:
             print(e)
+
+
 if __name__ == '__main__':
     # popular().Video_URL()
     popular().DownloadVideo()
